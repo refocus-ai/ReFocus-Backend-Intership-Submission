@@ -1,4 +1,4 @@
-from django.db import models
+from django.db import JSONField, models
 import uuid
 
 # Create your models here.
