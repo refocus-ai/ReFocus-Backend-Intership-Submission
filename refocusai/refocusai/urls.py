@@ -21,4 +21,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path("company", CompanyCreateUpdateView.as_view()),
     path("company/<uuid:id>", CompanyGetDestroyView.as_view()),
+    path("user", UserCreateUpdateView.as_view()), # path for user 
+    path("permission", PermissionCreateUpdateView.as_view()), # path for permissions
+    path("data_entry", DataEntryCreateUpdateView.as_view()), # path for data entries
 ]
